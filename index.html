@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beyond Guidance: Your Entrepreneurship Launchpad 🚀</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="form-header">
+            <div class="header-content">
+                <h1 class="form-title">Beyond Guidance: Your Entrepreneurship Launchpad 🚀</h1>
+                <p class="form-description">Got an idea that could change the world? Or just curious about what it takes to be your own boss?<br><br>
+
+Welcome to Beyond Guidance, a high-energy, one-day workshop by [Your NGO's Name] designed to take you through the entire entrepreneurship lifecycle—from that first spark of an idea to scaling your vision into a reality.<br><br>
+
+This isn't your typical lecture. We're building this day for you. By answering these questions, you'll help us tailor the sessions to tackle your biggest challenges and burning questions.<br><br>
+
+Let's build the future, together. Fill this out to book your spot!</p>
+            </div>
+        </header>
+
+        <main class="form-main">
+            <!-- Progress indicator -->
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <div class="progress-text">
+                    <span id="currentPage">1</span> of 4
+                </div>
+            </div>
+
+           <form
+  id="registrationForm"
+  class="registration-form"
+  action="https://script.google.com/macros/s/AKfycbwIALddPcFmDZNesyMo7AUSvodGpACu3Ehg1_N67UGvi05JM4PZOW6EZmo7Zw8i8KgQTw/exec"
+  method="post"
+>
+                <!-- Page 1: The Basics -->
+                <div class="form-page active" id="page1">
+                    <div class="page-header">
+                        <h2>The Basics (Let's Get Connected)</h2>
+                        <p class="page-description">First, let's get the essentials out of the way. This will help us send you all the important event details.</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="fullName">Full Name *</label>
+                        <input type="text" id="fullName" name="fullName" class="form-control" required>
+                        <div class="error-message" id="fullName-error"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                        <p class="field-description">This is where we'll send your ticket and workshop updates!</p>
+                        <div class="error-message" id="email-error"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="whatsapp">WhatsApp Number *</label>
+                        <input type="text" id="whatsapp" name="whatsapp" class="form-control" required>
+                        <p class="field-description">For last-minute reminders & a link to our exclusive attendees' network group.</p>
+                        <div class="error-message" id="whatsapp-error"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Which of these best describes you right now? *</label>
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="status" value="student" required>
+                                <span class="radio-text">🎓 College Student</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="status" value="professional" required>
+                                <span class="radio-text">💼 Working Professional</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="status" value="founder" required>
+                                <span class="radio-text">🔥 Founder / Business Owner</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="status" value="exploring" required>
+                                <span class="radio-text">🧭 Exploring what's next</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="status" value="other" required>
+                                <span class="radio-text">Other</span>
+                            </label>
+                        </div>
+                        <div class="error-message" id="status-error"></div>
+                    </div>
+                </div>
+
+                <!-- Page 2: Your Founder Journey -->
+                <div class="form-page" id="page2">
+                    <div class="page-header">
+                        <h2>Your Founder Journey (Where are you now?)</h2>
+                        <p class="page-description">Everyone's journey is unique. Tell us a bit about yours so we can make the content super relevant for you.</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">How far along are you on your entrepreneurial path? *</label>
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="journey" value="exploring" required>
+                                <span class="radio-text">"Just exploring ideas and soaking it all in."</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="journey" value="idea" required>
+                                <span class="radio-text">"I have a specific idea, but I'm not sure where to start."</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="journey" value="early" required>
+                                <span class="radio-text">"I'm in the early stages of building my project/startup."</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="journey" value="existing" required>
+                                <span class="radio-text">"I have an existing business and I'm looking for growth hacks."</span>
+                            </label>
+                        </div>
+                        <div class="error-message" id="journey-error"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">If you have an idea, what field gets you excited? (Select all that apply)</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="interests" value="fintech">
+                                <span class="checkbox-text">FinTech (Finance & Tech)</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="interests" value="edtech">
+                                <span class="checkbox-text">EdTech (Education & Tech)</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="interests" value="health">
+                                <span class="checkbox-text">Health & Wellness</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="interests" value="ecommerce">
+                                <span class="checkbox-text">E-commerce / D2C Brands</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="interests" value="saas">
+                                <span class="checkbox-text">SaaS (Software as a Service)</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="interests" value="social">
+                                <span class="checkbox-text">Social Impact</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="interests" value="climate">
+                                <span class="checkbox-text">Sustainability & Climate Tech</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="interests" value="creator">
+                                <span class="checkbox-text">Creator Economy (Content, Media)</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="interests" value="figuring">
+                                <span class="checkbox-text">Still figuring it out!</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="interests" value="other">
+                                <span class="checkbox-text">Other</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="hurdle">In one sentence, what's the biggest hurdle you think entrepreneurs face? *</label>
+                        <textarea id="hurdle" name="hurdle" class="form-control" rows="3" required></textarea>
+                        <p class="field-description">No wrong answers here! Is it funding? Fear? Finding customers? Your honest take helps us focus on real-world solutions.</p>
+                        <div class="error-message" id="hurdle-error"></div>
+                    </div>
+                </div>
+
+                <!-- Page 3: Shape the Workshop -->
+                <div class="form-page" id="page3">
+                    <div class="page-header">
+                        <h2>Shape the Workshop (What do you want to learn?)</h2>
+                        <p class="page-description">This is your chance to vote on what we cover. Help us build your perfect workshop agenda!</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">From our agenda, which topics are you MOST hyped about? (Choose your Top 3) *</label>
+                        <div class="checkbox-group" id="topicsGroup">
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="topics" value="validation">
+                                <span class="checkbox-text">Finding & Validating a Killer Business Idea</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="topics" value="pitch">
+                                <span class="checkbox-text">Crafting a Pitch Deck That Gets Noticed</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="topics" value="mvp">
+                                <span class="checkbox-text">Building a Minimum Viable Product (MVP) on a Budget</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="topics" value="funding">
+                                <span class="checkbox-text">The Money Talk: Bootstrapping vs. Raising Funds</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="topics" value="marketing">
+                                <span class="checkbox-text">Marketing for Zero: Getting Your First 100 Customers</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="topics" value="legal">
+                                <span class="checkbox-text">Legal 101: How to Start Without Getting Sued</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="topics" value="team">
+                                <span class="checkbox-text">Building Your Dream Team & Network</span>
+                            </label>
+                        </div>
+                        <div class="topics-counter">
+                            Selected: <span id="topicsCount">0</span>/3
+                        </div>
+                        <div class="error-message" id="topics-error"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">What's the #1 thing you hope to walk away with? *</label>
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="goal" value="plan" required>
+                                <span class="radio-text">A clear, actionable plan to start my venture.</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="goal" value="feedback" required>
+                                <span class="radio-text">Feedback on my current business idea.</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="goal" value="connections" required>
+                                <span class="radio-text">Connections with potential co-founders and mentors.</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="goal" value="inspiration" required>
+                                <span class="radio-text">A major boost of inspiration and motivation.</span>
+                            </label>
+                        </div>
+                        <div class="error-message" id="goal-error"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="question">If you could ask our expert speakers one question, what would it be? (Optional)</label>
+                        <textarea id="question" name="question" class="form-control" rows="3"></textarea>
+                        <p class="field-description">We'll pick the most popular questions for our live Q&A session!</p>
+                    </div>
+                </div>
+
+                <div id="form-pages-container">
+                    <!-- Page 1: Personal Information -->
+                    <div class="form-page" id="page1">
+                        <div class="page-header">
+                            <h2>Personal Information (We'll keep it private)</h2>
+                            <p class="page-description">We need some basic info to make sure you get the most out of the workshop.</p>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                            <p class="field-description">This is how we'll address you during the workshop.</p>
+                            <div class="error-message" id="name-error"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                            <p class="field-description">This is where we'll send your ticket and workshop updates!</p>
+                            <div class="error-message" id="email-error"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="whatsapp">WhatsApp Number *</label>
+                            <input type="text" id="whatsapp" name="whatsapp" class="form-control" required>
+                            <p class="field-description">For last-minute reminders & a link to our exclusive attendees' network group.</p>
+                            <div class="error-message" id="whatsapp-error"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Which of these best describes you right now? *</label>
+                            <div class="radio-group">
+                                <label class="radio-option">
+                                    <input type="radio" name="status" value="student" required>
+                                    <span class="radio-text">🎓 College Student</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="status" value="professional" required>
+                                    <span class="radio-text">💼 Working Professional</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="status" value="founder" required>
+                                    <span class="radio-text">🔥 Founder / Business Owner</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="status" value="exploring" required>
+                                    <span class="radio-text">🧭 Exploring what's next</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="status" value="other" required>
+                                    <span class="radio-text">Other</span>
+                                </label>
+                            </div>
+                            <div class="error-message" id="status-error"></div>
+                        </div>
+                    </div>
+
+                    <!-- Page 2: Your Founder Journey -->
+                    <div class="form-page" id="page2">
+                        <div class="page-header">
+                            <h2>Your Founder Journey (Where are you now?)</h2>
+                            <p class="page-description">Everyone's journey is unique. Tell us a bit about yours so we can make the content super relevant for you.</p>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">How far along are you on your entrepreneurial path? *</label>
+                            <div class="radio-group">
+                                <label class="radio-option">
+                                    <input type="radio" name="journey" value="exploring" required>
+                                    <span class="radio-text">"Just exploring ideas and soaking it all in."</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="journey" value="idea" required>
+                                    <span class="radio-text">"I have a specific idea, but I'm not sure where to start."</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="journey" value="early" required>
+                                    <span class="radio-text">"I'm in the early stages of building my project/startup."</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="journey" value="existing" required>
+                                    <span class="radio-text">"I have an existing business and I'm looking for growth hacks."</span>
+                                </label>
+                            </div>
+                            <div class="error-message" id="journey-error"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">If you have an idea, what field gets you excited? (Select all that apply)</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-option">
+                                    <input type="checkbox" name="interests" value="fintech">
+                                    <span class="checkbox-text">FinTech (Finance & Tech)</span>
+                                </label>
+                                <label class="checkbox-option">
+                                    <input type="checkbox" name="interests" value="edtech">
+                                    <span class="checkbox-text">EdTech (Education & Tech)</span>
+                                </label>
+                                <label class="checkbox-option">
+                                    <input type="checkbox" name="interests" value="health">
+                                    <span class="checkbox-text">Health & Wellness</span>
+                                </label>
+                                <label class="checkbox-option">
+                                    <input type="checkbox" name="interests" value="ecommerce">
+                                    <span class="checkbox-text">E-commerce / D2C Brands</span>
+                                </label>
+                                <label class="checkbox-option">
+                                    <input type="checkbox" name="interests" value="saas">
+                                    <span class="checkbox-text">SaaS (Software as a Service)</span>
+                                </label>
+                                <label class="checkbox-option">
+                                    <input type="checkbox" name="interests" value="social">
+                                    <span class="checkbox-text">Social Impact</span>
+                                </label>
+                                <label class="checkbox-option">
+                                    <input type="checkbox" name="interests" value="climate">
+                                    <span class="checkbox-text">Sustainability & Climate Tech</span>
+                                </label>
+                                <label class="checkbox-option">
+                                    <input type="checkbox" name="interests" value="creator">
+                                    <span class="checkbox-text">Creator Economy (Content, Media)</span>
+                                </label>
+                                <label class="checkbox-option">
+                                    <input type="checkbox" name="interests" value="figuring">
+                                    <span class="checkbox-text">Still figuring it out!</span>
+                                </label>
+                                <label class="checkbox-option">
+                                    <input type="checkbox" name="interests" value="other">
+                                    <span class="checkbox-text">Other</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="hurdle">In one sentence, what's the biggest hurdle you think entrepreneurs face? *</label>
+                            <textarea id="hurdle" name="hurdle" class="form-control" rows="3" required></textarea>
+                            <p class="field-description">No wrong answers here! Is it funding? Fear? Finding customers? Your honest take helps us focus on real-world solutions.</p>
+                            <div class="error-message" id="hurdle-error"></div>
+                        </div>
+                    </div>
+
+                    <!-- Page 3: Shape the Workshop -->
+                    <div class="form-page" id="page3">
+                        <div class="page-header">
+                            <h2>Shape the Workshop (What do you want to learn?)</h2>
+                            <p class="page-description">This is your chance to vote on what we cover. Help us build your perfect workshop agenda!</p>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">From our agenda, which topics are you MOST hyped about? (Choose your Top 3) *</label>
+                            <div class="checkbox-group" id="topicsGroup">
+                                <label class="checkbox-option">
+                                    <input type="checkbox" name="topics" value="validation">
+                                    <span class="checkbox-text">Finding & Validating a Killer Business Idea</span>
+                                </label>
+                                <label class="checkbox-option">
+                                    <input type="checkbox" name="topics" value="pitch">
+                                    <span class="checkbox-text">Crafting a Pitch Deck That Gets Noticed</span>
+                                </label>
+                                <label class="checkbox-option">
+                                    <input type="checkbox" name="topics" value="mvp">
+                                    <span class="checkbox-text">Building a Minimum Viable Product (MVP) on a Budget</span>
+                                </label>
+                                <label class="checkbox-option">
+                                    <input type="checkbox" name="topics" value="funding">
+                                    <span class="checkbox-text">The Money Talk: Bootstrapping vs. Raising Funds</span>
+                                </label>
+                                <label class="checkbox-option">
+                                    <input type="checkbox" name="topics" value="marketing">
+                                    <span class="checkbox-text">Marketing for Zero: Getting Your First 100 Customers</span>
+                                </label>
+                                <label class="checkbox-option">
+                                    <input type="checkbox" name="topics" value="legal">
+                                    <span class="checkbox-text">Legal 101: How to Start Without Getting Sued</span>
+                                </label>
+                                <label class="checkbox-option">
+                                    <input type="checkbox" name="topics" value="team">
+                                    <span class="checkbox-text">Building Your Dream Team & Network</span>
+                                </label>
+                            </div>
+                            <div class="topics-counter">
+                                Selected: <span id="topicsCount">0</span>/3
+                            </div>
+                            <div class="error-message" id="topics-error"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">What's the #1 thing you hope to walk away with? *</label>
+                            <div class="radio-group">
+                                <label class="radio-option">
+                                    <input type="radio" name="goal" value="plan" required>
+                                    <span class="radio-text">A clear, actionable plan to start my venture.</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="goal" value="feedback" required>
+                                    <span class="radio-text">Feedback on my current business idea.</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="goal" value="connections" required>
+                                    <span class="radio-text">Connections with potential co-founders and mentors.</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="goal" value="inspiration" required>
+                                    <span class="radio-text">A major boost of inspiration and motivation.</span>
+                                </label>
+                            </div>
+                            <div class="error-message" id="goal-error"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="question">If you could ask our expert speakers one question, what would it be? (Optional)</label>
+                            <textarea id="question" name="question" class="form-control" rows="3"></textarea>
+                            <p class="field-description">We'll pick the most popular questions for our live Q&A session!</p>
+                        </div>
+                    </div>
+
+                    <!-- Page 4: Final Details -->
+                    <div class="form-page" id="page4">
+                        <div class="page-header">
+                            <h2>Final Details (Almost there!)</h2>
+                            <p class="page-description">Just a couple more things to make sure you have the best experience.</p>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">How did you find out about us? *</label>
+                            <div class="radio-group">
+                                <label class="radio-option">
+                                    <input type="radio" name="referral" value="instagram" required>
+                                    <span class="radio-text">Instagram</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="referral" value="linkedin" required>
+                                    <span class="radio-text">LinkedIn</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="referral" value="college" required>
+                                    <span class="radio-text">College/University</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="referral" value="friend" required>
+                                    <span class="radio-text">A Friend</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="referral" value="whatsapp" required>
+                                    <span class="radio-text">WhatsApp</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="referral" value="other" required>
+                                    <span class="radio-text">Other</span>
+                                </label>
+                            </div>
+                            <div class="error-message" id="referral-error"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Want to join an exclusive WhatsApp group for attendees to network before and after the event? *</label>
+                            <div class="radio-group">
+                                <label class="radio-option">
+                                    <input type="radio" name="whatsappGroup" value="yes" required>
+                                    <span class="radio-text">Yes, count me in!</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="whatsappGroup" value="no" required>
+                                    <span class="radio-text">No, thank you.</span>
+                                </label>
+                            </div>
+                            <div class="error-message" id="whatsappGroup-error"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Success Page -->
+                <div class="success-page hidden" id="successPage">
+                    <div class="success-content">
+                        <div class="success-icon">✅</div>
+                        <h2>You're all set! Thanks for registering.</h2>
+                        <p>A confirmation email is on its way. Please keep this QR code safe for entry at the event.</p>
+                        <div class="qr-code-container" id="qrcode"></div>
+                        <p class="success-signature">- The Beyond Guidance Team</p>
+                    </div>
+                </div>
+
+                <!-- Navigation buttons -->
+                <div class="form-navigation">
+                    <button type="button" id="prevBtn" class="btn btn--outline" style="display: none;">Previous</button>
+                    <button type="button" id="nextBtn" class="btn btn--primary">Next</button>
+                    <button type="button" id="submitBtn" class="btn btn--primary" style="display: none;">Submit Registration</button>
+                </div>
+            </form>
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

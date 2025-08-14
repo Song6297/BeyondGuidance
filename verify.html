@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Scanner - Verification</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        main { max-width: 600px; margin: 2rem auto; text-align: center; }
+        #qr-reader { border: 2px solid #ddd; border-radius: 8px; overflow: hidden; }
+        #qr-reader-results { margin-top: 1.5rem; font-size: 1.2rem; font-weight: bold; min-height: 50px; padding: 10px; border-radius: 8px;}
+        .success { color: #28a745; background-color: #e9f7eb; }
+        .error { color: #dc3545; background-color: #fce8e6; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <main>
+            <h1>Attendee Verification</h1>
+            <p>Point the camera at the attendee's QR code.</p>
+            <div id="qr-reader"></div>
+            <div id="qr-reader-results"></div>
+        </main>
+    </div>
+
+    <script src="https://unpkg.com/html5-qrcode"></script>
+    <script src="verify.js"></script>
+</body>
+</html>
